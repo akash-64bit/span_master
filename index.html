@@ -5,22 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>Welcome to EliteHubs,India's upcoming Esports & PC Store!
-        <a class="login-btn" href="#">Login</a>
+        <a class="login-btn float-right" href="#">
+            <span class="glyphicon glyphicon-lock"></span>
+            Login
+        </a>
     </header>
 
         <nav class="navbar navbar-sm bg-warning">
             <a class="navbar-brand">Demo</a>
-            <form class="form-inline" style="margin:auto;max-width:300px">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
+            <form class="example" action="/action_page.php">
+                <input type="text" placeholder="Quick Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>              
           </nav>
-
+          <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-warning">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li> -->
+                  <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Shop By Brand
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">ADTA XPG</a>
+                      <a class="dropdown-item" href="#">AMD</a>
+                      <a class="dropdown-item" href="#">COOLERMASTER</a>
+                      <a class="dropdown-item" href="#">COSMICBYTE</a>
+                      <a class="dropdown-item" href="#">DEEPCOOL</a>
+                      <a class="dropdown-item" href="#">FRACTAL DESIGN</a>
+                      <a class="dropdown-item" href="#">INTEL</a>
+                      <a class="dropdown-item" href="#">LOGITECH</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>            
+          </nav>
 
 
 
