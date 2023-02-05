@@ -1,38 +1,51 @@
-body {
-  font-family: Arial;
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:center;
+  background-color: hsla(33, 77%, 48%, 0.752);
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+}
+nav .logo {
+  font-weight: 700;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav #toggle,
+nav label {
+  display: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f8f3f3;
-}
-
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #dddfdf;
-  color: rgb(9, 9, 9);
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none;
-  cursor: pointer;
-}
-
-form.example button:hover {
-  background: #c2c4c5;
-}
-
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
+@media (max-width: 40.625em) {
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  nav label {
+    display: inline-flex;
+    color: white;
+    cursor: pointer;
+  }
+  nav #toggle:checked ~ .menu {
+    height: 100%;
+  }
 }
