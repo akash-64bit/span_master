@@ -45,6 +45,16 @@ form.inputBox input[type=text] {
     clear: both;
     display: table;
   }
+.loginIcon{
+  float: left;
+  padding-right: 10px;
+}
+.logIn{
+  float: right;
+  padding-right: 20px;
+  margin-top: -25px;
+
+}
 
 .main {
   height: 100%;
