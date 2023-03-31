@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Shop Box</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -18,9 +18,9 @@
       </form>
     </div>
     <div class="logIn">
-      <button type="button" ><i class="fa fa-user loginIcon"></i><a href="login.html">Login</a></button>
-      <button type="button"><a href="singup.html">Register</a></button>
-      <button type="button" ><i class="fa fa-shopping-cart"></i><a href="#"></a></button>
+      <button class="btn" type="button" ><i class="fa fa-user loginIcon"></i><a href="login.html">Login</a></button>
+      <button class="btn" type="button"><a href="singup.html">Register</a></button>
+      <button class="btn" type="button" ><i class="fa fa-shopping-cart loginIcon"></i><a href="#">Cart</a></button>
     </div>
   </div>
     <input type="checkbox" id="openSidebarMenu">
@@ -31,15 +31,49 @@
     </label>
     <div id="sidebarMenu">
         <ul class="menu">
-            <li><a href="#">Home</a></li>
+            <li> <a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
     </div>
-    <div class="imgSlider">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/Poster1.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/Poster2.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/Poster3.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div class="slideDot" style="text-align:center;">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      <div class="container">
+        <img src="img/RAM.jpg" alt="">
+        <img src="img/Cabinet.jpg" alt="">
+        <img src="img/Motherbord.jpg" alt="">
         
-    </div>
+      </div>
 </body>
+<script src="main.js/script.js"></script>
 </html>
