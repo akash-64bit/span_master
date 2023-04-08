@@ -367,7 +367,7 @@ body {
 .arrow-button {
   display: flex;
   color: #C2FFE9;
-  background-color: #00E692;
+  background-color: #092fa1d4;
   padding: 10px 16px;
   border-radius: 20px;
   transition: all .3s ease;
@@ -414,6 +414,6 @@ body {
 }
 
 .arrow-button:hover {
-  background-color: #017A4F;
+  background-color: #0c469e;
   color: #fff;
 }
