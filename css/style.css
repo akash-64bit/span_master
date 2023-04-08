@@ -300,7 +300,6 @@ body {
   align-items:center;
   gap:20px;
   
-/* Card_content */
 
 }
 .container:hover img {
@@ -310,4 +309,111 @@ body {
   transform:perspective(800px)       rotateY(0deg);
   opacity:1;
 }
+/* Card_content */
+.container:hover img {
+  opacity:0.3;
+}
+.container img:hover {
+  transform:perspective(500px)       rotateY(0deg);
+  opacity:1;
+}
+.image {
+  opacity:1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text{
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
 
+  background:rgb(255, 255, 255);
+   /* Black see-through */
+  transition: .5s ease;
+  opacity:0;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+/* See more button */
+
+.arrow-button {
+  display: flex;
+  color: #C2FFE9;
+  background-color: #00E692;
+  padding: 10px 16px;
+  border-radius: 20px;
+  transition: all .3s ease;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  font-size: 14px;
+}
+
+.arrow-button > .arrow {
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #C2FFE9;
+  border-bottom: 2px solid #C2FFE9;
+  position: relative;
+  transform: rotate(-45deg);
+  margin: 0 6px;
+  transition: all .3s ease;
+}
+
+.arrow-button > .arrow::before {
+  display: block;
+  background-color: currentColor;
+  width: 3px;
+  transform-origin: bottom right;
+  height: 2px;
+  position: absolute;
+  opacity: 0;
+  bottom: calc(-2px / 2);
+  transform: rotate(45deg);
+  transition: all .3s ease;
+  content: "";
+  right: 0;
+}
+
+.arrow-button:hover > .arrow {
+  transform: rotate(-45deg) translate(4px, 4px);
+  border-color: text-hover-color;
+}
+
+.arrow-button:hover > .arrow::before {
+  opacity: 1;
+  width: 8px;
+}
+
+.arrow-button:hover {
+  background-color: #017A4F;
+  color: #fff;
+}

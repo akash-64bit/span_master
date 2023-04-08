@@ -10,6 +10,7 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- header -->
   <div class="header">
     <div class="searchBar">
       <form class="inputBox" action="#">
@@ -23,6 +24,7 @@
       <button class="btn" type="button" ><i class="fa fa-shopping-cart loginIcon"></i><a href="#">Cart</a></button>
     </div>
   </div>
+  <!-- Sidebar menu -->
     <input type="checkbox" id="openSidebarMenu">
     <label for="openSidebarMenu" class="sidebarIconToggle">
         <div class="spinner top"></div>
@@ -38,6 +40,7 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </div>
+    <!-- Slider -->
     <div class="slideshow-container">
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
@@ -60,7 +63,7 @@
       <a class="prev" onclick="plusSlides(-1)">❮</a>
       <a class="next" onclick="plusSlides(1)">❯</a>
       
-      </div>
+    </div>
       <br>
       
       <div class="slideDot" style="text-align:center;">
@@ -68,12 +71,22 @@
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
       </div>
+      <!-- Card image  -->
       <div class="container">
-        <img src="img/RAM.jpg" alt="">
-        <img src="img/Cabinet.jpg" alt="">
-        <img src="img/Motherbord.jpg" alt="">
-        
-      </div>
-</body>
+        <img src="img/RAM.jpg" alt="" class="image" style="width:30%">
+        <div class="middle">
+          <div class="overlay">Hello World</div>
+        </div>          
+          <img src="img/Cabinet.jpg" alt="">
+          
+          <img src="img/Motherbord.jpg" alt="">
+        </div>
+        <br>
+        <br>
+        <br>
+      <!-- See more button  -->
+      <button class="arrow-button">See more<span class="arrow"></span>
+      </button>
 <script src="main.js/script.js"></script>
+</body>
 </html>
